@@ -1,0 +1,15 @@
+<section>
+  <ul *ngIf="list.length">
+    <li *ngFor="let item of list; let i = index">
+      <input type="checkbox" [(ngModel)] = "item.checked">
+      <input type="text" [(ngModel)] = "item.todo" [ngClass]="{'checked' : item.checked}">
+      <button (click) = "deletaItem(i)">
+        <img src="assets/icons/trash.svg">
+      </button>
+    </li>
+  </ul>
+</section>
+
+
+<app-input-add-list (emmitListItem)="setEmitItemToDo($event)"></app-input-add-list>
+<app-button-delete-all (click) = "deletaTudo()"></app-button-delete-all>
