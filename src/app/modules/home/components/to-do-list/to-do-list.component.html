@@ -1,4 +1,8 @@
 <section>
+
+  <h1 *ngIf="!list.length">Lista está vazia</h1>
+  <h1 *ngIf="!list.length">Adicione o primeiro item à lista</h1>
+
   <ul *ngIf="list.length">
     <li *ngFor="let item of list; let i = index">
       <input type="checkbox" [(ngModel)] = "item.checked">
@@ -8,6 +12,7 @@
       </button>
     </li>
   </ul>
+
 </section>
 
 
