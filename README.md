@@ -1,3 +1,6 @@
+#Description
+This project was as a study on angular base concepts, it's a small to do list using only angular and saving the list items on local storage
+
 # AppToDo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
