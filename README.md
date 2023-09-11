@@ -1,4 +1,5 @@
-#Description
+# Description
+
 This project was as a study on angular base concepts, it's a small to do list using only angular and saving the list items on local storage
 
 # AppToDo
